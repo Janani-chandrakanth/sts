@@ -1,0 +1,65 @@
+[
+  {
+    "officeName": "Coimbatore North – Regional Transport Office",
+    "officeType": "RTO",
+    "pincode": "641034",
+    "city": "Coimbatore",
+    "location": { "lat": 11.0799244, "lng": 76.948097 }
+  },
+  {
+    "officeName": "RTO Coimbatore Central",
+    "officeType": "RTO",
+    "pincode": "641018",
+    "city": "Coimbatore",
+    "location": { "lat": 11.00929, "lng": 76.974955 }
+  },
+  {
+    "officeName": "Regional Transport Office – Peelamedu",
+    "officeType": "RTO",
+    "pincode": "641004",
+    "city": "Coimbatore",
+    "location": { "lat": 11.022063, "lng": 77.0003595 }
+  },
+  {
+    "officeName": "Regional Transport Office – Coimbatore West",
+    "officeType": "RTO",
+    "pincode": "641042",
+    "city": "Coimbatore",
+    "location": { "lat": 10.9471868, "lng": 76.9347497 }
+  },
+  {
+    "officeName": "Idikarai VAO Office",
+    "officeType": "VAO",
+    "pincode": "641022",
+    "city": "Coimbatore",
+    "location": { "lat": 11.1327149, "lng": 76.9705639 }
+  },
+  {
+    "officeName": "VAO & RI Office – Thudiyalur",
+    "officeType": "VAO",
+    "pincode": "641017",
+    "city": "Coimbatore",
+    "location": { "lat": 11.0834196, "lng": 76.943091 }
+  },
+  {
+    "officeName": "VAO Office – Pannimadai",
+    "officeType": "VAO",
+    "pincode": "641017",
+    "city": "Coimbatore",
+    "location": { "lat": 11.0854536, "lng": 76.9178092 }
+  },
+  {
+    "officeName": "VAO Office – Saravanampatti",
+    "officeType": "VAO",
+    "pincode": "641031",
+    "city": "Coimbatore",
+    "location": { "lat": 11.1158831, "lng": 76.9399045 }
+  },
+  {
+    "officeName": "VAO Office – Gandhipuram",
+    "officeType": "VAO",
+    "pincode": "641012",
+    "city": "Coimbatore",
+    "location": { "lat": 11.018514, "lng": 76.9695151 }
+  }
+]

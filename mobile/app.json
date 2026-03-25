@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "GovQueue",
+    "slug": "govqueue",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "govqueue",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": false,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.smarttokensystem.app",
+      "permissions": ["INTERNET"],
+      "adaptiveIcon": {
+        "backgroundColor": "#0D47A1",
+        "foregroundImage": "./assets/images/android-icon-foreground.png"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#0D47A1"
+        }
+      ]
+    ]
+  }
+}
