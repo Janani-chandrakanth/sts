@@ -20,7 +20,7 @@ const AdminDashboard = () => {
   const loadQueue = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/admin/queue?date=${today}`,
+        `https://sts-backend-0zqu.onrender.com/api/admin/queue?date=${today}`,
         { headers }
       );
       setQueue(res.data);
@@ -36,7 +36,7 @@ const AdminDashboard = () => {
     try {
       setCalling(true);
       await axios.put(
-        "http://localhost:5000/api/admin/next",
+        "https://sts-backend-0zqu.onrender.com/api/admin/next",
         {},
         { headers }
       );
@@ -49,7 +49,7 @@ const AdminDashboard = () => {
   /* COMPLETE TOKEN */
   const completeToken = async (id) => {
     await axios.put(
-      `http://localhost:5000/api/admin/complete/${id}`,
+      `https://sts-backend-0zqu.onrender.com/api/admin/complete/${id}`,
       {},
       { headers }
     );

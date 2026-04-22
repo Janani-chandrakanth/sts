@@ -37,7 +37,7 @@ const Offices = () => {
         console.log("📤 Sending params:", params); // DEBUG
       }
 
-      const res = await axios.get("http://localhost:5000/api/offices/search", {
+      const res = await axios.get("https://sts-backend-0zqu.onrender.com/api/offices/search", {
         params
       });
 

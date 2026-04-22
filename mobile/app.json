@@ -2,6 +2,7 @@
   "expo": {
     "name": "GovQueue",
     "slug": "govqueue",
+    "owner": "janani10",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -13,7 +14,9 @@
     },
     "android": {
       "package": "com.smarttokensystem.app",
-      "permissions": ["INTERNET"],
+      "permissions": [
+        "INTERNET"
+      ],
       "adaptiveIcon": {
         "backgroundColor": "#0D47A1",
         "foregroundImage": "./assets/images/android-icon-foreground.png"
@@ -33,6 +36,11 @@
           "backgroundColor": "#0D47A1"
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f551a922-bf79-4370-a4da-466ec39027f8"
+      }
+    }
   }
 }

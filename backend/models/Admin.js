@@ -3,7 +3,9 @@ const mongoose = require("mongoose");
 const AdminSchema = new mongoose.Schema({
   username: {
     type: String,
-    required: true
+    required: true,
+    lowercase: true,
+    trim: true
   },      // officer login (email)
 
   password: {
@@ -31,4 +33,4 @@ const AdminSchema = new mongoose.Schema({
 });
 
 // ✅ Correct collection name (no spaces)
-module.exports = mongoose.model("Admin", AdminSchema, "Admins collection");
+module.exports = mongoose.model("Admin", AdminSchema, "admins");

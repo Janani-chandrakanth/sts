@@ -5,7 +5,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 // e.g., if your PC is on 192.168.1.5 → 'http://192.168.1.5:5000'
 // You can find it by running `ipconfig` on Windows
 // Do NOT use 'localhost' — Expo Go on a physical device can't reach it
-export const BASE_URL = 'http://192.168.0.15:5000';
+export const BASE_URL = 'https://sts-backend-0zqu.onrender.com';
 
 const api = axios.create({
   baseURL: BASE_URL,

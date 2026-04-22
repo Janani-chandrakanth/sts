@@ -16,7 +16,7 @@ const MyAppointments = () => {
   const fetchAppointments = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/appointments/my",
+        "https://sts-backend-0zqu.onrender.com/api/appointments/my",
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -36,7 +36,7 @@ const MyAppointments = () => {
 
     try {
       await axios.put(
-        `http://localhost:5000/api/appointments/cancel/${id}`,
+        `https://sts-backend-0zqu.onrender.com/api/appointments/cancel/${id}`,
         {},
         {
           headers: {

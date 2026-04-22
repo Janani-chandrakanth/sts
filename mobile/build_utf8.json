@@ -1,0 +1,54 @@
+﻿[
+  {
+    "id": "b2e1d52e-1b9f-46cb-af2a-e9ae2198b0a4",
+    "status": "ERRORED",
+    "platform": "ANDROID",
+    "error": {
+      "errorCode": "UNKNOWN_ERROR",
+      "message": "Unknown error. See logs of the Build complete hook build phase for more information."
+    },
+    "artifacts": {},
+    "fingerprint": {
+      "id": "019d2b23-c1c7-7fc7-bcc0-107e5b95c3ac",
+      "hash": "e510614bd87d28ec2239fe105648d4143f5386c4"
+    },
+    "initiatingActor": {
+      "id": "64e8fc1b-bfc1-484c-8392-5178e707b252",
+      "displayName": "janani10"
+    },
+    "logFiles": [
+      "https://job-logs.eascdn.net/production/b2e1d52e-1b9f-46cb-af2a-e9ae2198b0a4/1774545596995-72d2b23b-55e2-472b-9bc9-247b7af87a69.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260326%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260326T172029Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=863a22b24269edb3e0d1b631284e9ae54a2e562d167a146720cb47a30451ff6c60c8f2ef5b74b2d2ccb199ce6d4d536dc4482bf8cc69e5f2938e3f83cc465d5241f5b5f9698035c87e66caabfa29484001bc851975dfbb36474367d6d629e5e2cdb5b9444e7ff29fc913c28000fe50f31302a260b0f03c577af7c7d89463ed0ee9630565bfab9576f4c985d75a58fbdc6af06001b63e3fb28ee088e5c8b4007d8341863495cb0693571491a311c8efd6ce53b97e43550218d6e363d15d05c0f94c80cc2da6a1219339a93faea894ffc5c2e7743e5759dc9db903ca9dac34124f43ee72c751a7865b8c50743901e9410c0693defd16326dae689eef1093ea58c9",
+      "https://job-logs.eascdn.net/production/b2e1d52e-1b9f-46cb-af2a-e9ae2198b0a4/1774545609497-7bf4534c-d425-4508-8828-422b4c9ab04f.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260326%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260326T172029Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=c0ddb92a1b6101342eb36cfa0cd0bd1d6b3718e159f90de63164b4c4ae9b6a96510577085416f980d9337ce16592864f05aa6ec3e2d142383714083d87d6850a7b41974ff7f259215b863a24cec90caf9a68060edb0e6ebceb33444ef66ff65aa14ac2fea04cb1629dc26714d40542520c2a46f4108d136cfdf33970b12460f44c7735f47509e12faf789ab20338ba1776747afdfb836390be41da7ebef63b24a5999021506bfd52785b736811d32277e58e82f03c086589f71745e97b4884879d74b178cfca41e3ba285bcbc985364fe44989f9d342fc213ef2b4b4b0593185503d5d1bbb6f886110b58c8714cb51c644dd41817bf42724bf75cbf5d6f53f39",
+      "https://job-logs.eascdn.net/production/b2e1d52e-1b9f-46cb-af2a-e9ae2198b0a4/1774545609750-b1784ea6-fc37-4929-97fc-e6d1f8aad185.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260326%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260326T172029Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=0b30b5c30802c434df062ed2d3f2f342831de5b3ccb0c39f1141412fe9ef59355232ea49ce73bf9cf65d68436500600df64dfe5661273f9c6204c2adeeac1434876e0b1a9fd927cd1de61a4d1a025f25650a2f2582318da66d28fe61a6a73fda1d884fb3dc62eb22e70f9715d0e2fbf98b4a2553ff4063c32519560389b83e5298a8e3f90fbc2d259bc02f28a4611bb22f3df1e677e807861f54554d8f123759ea8db642de041b654477b1aef1f7f75dad2a7ae305e9f292f57d6a0f350bc735f002de4aeeee7f6cf7d2c0bfedabd78c02464b600c95268512731f97d22f263c5cd278d4f4dded8b2ec2b09fbdb6e02383bb898bcdff658b70aa686a899b8a00",
+      "https://job-logs.eascdn.net/production/b2e1d52e-1b9f-46cb-af2a-e9ae2198b0a4/1774545609943-ec0cd949-30e1-4590-8f38-40228b46837c.txt?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=www-production%40exponentjs.iam.gserviceaccount.com%2F20260326%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260326T172126Z&X-Goog-Expires=900&X-Goog-SignedHeaders=host&X-Goog-Signature=79cb7a221fbbb65d5df1ca5d79d8fc3ecf828f59776d64271e0f1733e2fcde93970ba2b2c7cf9193851d87ce5cc7608bb2ab276405a3f42d74f60245ae52573ac0e990a5eb0c1a8228b00952bc37b90721ff5ebc651cf6e91e1e8416a022691da2e8ee837cabded1d3b8dc9bd9b3358fdcaacde51fc41759953b61c631f091776d609466042616737464bca83405b707365dcb03f6fb0f30747e50bfbbf1bc24e340326058c59f08e602a0fa379b2af577cc9ba3d8e9ece86187e1b2bd9a8daa339b4761cc0bf3e43edc03374f3a641db66a75a1343be8f721a5c93f50f01494689b8fc667bd77d0b4d03256f40af4f3a42115b91b534de04201b865a48ea349"
+    ],
+    "project": {
+      "id": "f551a922-bf79-4370-a4da-466ec39027f8",
+      "name": "govqueue",
+      "slug": "govqueue",
+      "ownerAccount": {
+        "id": "1967b64b-f113-44fb-b441-fa4f04b55bb3",
+        "name": "janani10"
+      }
+    },
+    "distribution": "STORE",
+    "buildProfile": "preview",
+    "sdkVersion": "54.0.0",
+    "appVersion": "1.0.0",
+    "appBuildVersion": "1",
+    "gitCommitHash": "acc2daeec6bd5bc3e00eca3f1b81b898fd584aa3",
+    "gitCommitMessage": "Updated MongoDB Atlas connection",
+    "priority": "NORMAL_PLUS",
+    "createdAt": "2026-03-26T17:19:56.703Z",
+    "updatedAt": "2026-03-26T17:20:59.741Z",
+    "completedAt": "2026-03-26T17:20:54.495Z",
+    "expirationDate": "2026-04-25T17:19:56.739Z",
+    "isForIosSimulator": false,
+    "metrics": {
+      "buildWaitTime": 151,
+      "buildQueueTime": 45475,
+      "buildDuration": 11807
+    }
+  }
+]
+

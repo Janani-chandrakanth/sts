@@ -18,7 +18,7 @@ const TokenDisplay = () => {
   const loadTokens = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/admin/queue?date=${today}`,
+        `https://sts-backend-0zqu.onrender.com/api/admin/queue?date=${today}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("adminToken")}`

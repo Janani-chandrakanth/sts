@@ -1,10 +1,10 @@
 import axios from "axios";
 
 /* Citizen Auth API */
-const AUTH_API = "http://localhost:5000/api/auth";
+const AUTH_API = "https://sts-backend-0zqu.onrender.com/api/auth";
 
 /* Admin Auth API */
-const ADMIN_API = "http://localhost:5000/api/admin";
+const ADMIN_API = "https://sts-backend-0zqu.onrender.com/api/admin";
 
 /* Citizen Login (NO CHANGE) */
 export const loginUser = (data) => {

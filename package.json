@@ -1,0 +1,10 @@
+{
+  "name": "smart-token-system",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "mobile",
+    "backend",
+    "frontend"
+  ]
+}

@@ -1,0 +1,8 @@
+# Ignore irrelevant parts of the monorepo for Mobile build
+backend/
+frontend/
+node_modules/
+.git/
+*.json
+!package.json
+!mobile/

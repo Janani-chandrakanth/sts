@@ -24,7 +24,7 @@ const Services = () => {
     const fetchServices = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:5000/api/services",
+          "https://sts-backend-0zqu.onrender.com/api/services",
           {
             params: { officeType }   // ✅ MATCH BACKEND
           }

@@ -40,7 +40,7 @@ useEffect(() => {
       
       // 1. Load service + offices
       const res = await axios.get(
-        `http://localhost:5000/api/services/${serviceId}`,
+        `https://sts-backend-0zqu.onrender.com/api/services/${serviceId}`,
         { headers: { Authorization: `Bearer ${token}` } }
       );
       
@@ -82,7 +82,7 @@ useEffect(() => {
     const fetchDates = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/appointments/available-dates/${officeId}`,
+          `https://sts-backend-0zqu.onrender.com/api/appointments/available-dates/${officeId}`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
         setAvailableDates(res.data || []);
@@ -100,7 +100,7 @@ useEffect(() => {
     const previewCounter = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/appointments/counter-preview`,
+          `https://sts-backend-0zqu.onrender.com/api/appointments/counter-preview`,
           { params: { priority: priorityCategory, officeId }, headers: { Authorization: `Bearer ${token}` } }
         );
         const counter = Number(res.data?.counter) || 1;
@@ -128,7 +128,7 @@ useEffect(() => {
 
     const fetchOffice = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/offices/${officeId}`, { headers: { Authorization: `Bearer ${token}` } });
+        const res = await axios.get(`https://sts-backend-0zqu.onrender.com/api/offices/${officeId}`, { headers: { Authorization: `Bearer ${token}` } });
         const off = res.data;
         setOfficeName(off.officeName || "Office Confirmed");
         // merge into offices list so downstream lookups work
@@ -147,7 +147,7 @@ useEffect(() => {
     const fetchSlots = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/appointments/time-slots`,
+          `https://sts-backend-0zqu.onrender.com/api/appointments/time-slots`,
           { params: { officeId, date: selectedDate }, headers: { Authorization: `Bearer ${token}` } }
         );
         setTimeSlots(res.data || []);
@@ -167,7 +167,7 @@ useEffect(() => {
   
   try {
     const res = await axios.post(
-      "http://localhost:5000/api/appointments/book",
+      "https://sts-backend-0zqu.onrender.com/api/appointments/book",
       {
         officeId,
         service: serviceId,

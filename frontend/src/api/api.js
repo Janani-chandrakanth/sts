@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Get BASE_URL from environment or default to local
-export const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+export const BASE_URL = process.env.REACT_APP_API_URL || 'https://sts-backend-0zqu.onrender.com';
 
 const api = axios.create({
   baseURL: BASE_URL,

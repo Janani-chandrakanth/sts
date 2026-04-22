@@ -1,6 +1,7 @@
 const Admin = require("../models/Admin");
 const Appointment = require("../models/Appointment");
 const jwt = require("jsonwebtoken");
+const bcrypt = require("bcryptjs");
 
 /* ✅ SUPER ADMIN CONFIG */
 const SUPER_ADMIN = {
@@ -17,10 +18,13 @@ exports.adminLogin = async (req, res) => {
     const { username, password } = req.body;
 
     /* SUPER ADMIN LOGIN */
+    const normalizedUsername = username.toLowerCase().trim();
+
     if (
-      username === SUPER_ADMIN.username &&
+      normalizedUsername === SUPER_ADMIN.username.toLowerCase() &&
       password === SUPER_ADMIN.password
     ) {
+      console.log("SUPER ADMIN LOGIN SUCCESS");
       const token = jwt.sign(
         { role: "superadmin" },
         process.env.JWT_SECRET,
@@ -35,13 +39,31 @@ exports.adminLogin = async (req, res) => {
       });
     }
 
-    /* OFFICER/SUPERADMIN LOGIN FROM DB */
-    const admin = await Admin.findOne({ username }).populate("office");
-    console.log("ADMIN FOUND:", admin);
+    /* OFFICER LOGIN FROM DB */
+    console.log(`ATTEMPTING LOGIN FOR: "${normalizedUsername}"`);
+    const admin = await Admin.findOne({ username: normalizedUsername }).populate("office");
 
-    if (!admin || admin.password !== password) {
+    if (!admin) {
+      console.log(`LOGIN FAILED: User "${normalizedUsername}" not found in DB`);
       return res.status(401).json({ message: "Invalid credentials" });
     }
+
+    console.log(`DB USER FOUND. PASS IN DB TYPE: ${admin.password.startsWith('$') ? 'HASHED' : 'PLAIN'}`);
+
+    // Support both hashed and legacy plaintext passwords
+    let isMatch = false;
+    if (admin.password.startsWith("$2b$") || admin.password.startsWith("$2a$")) {
+      isMatch = await bcrypt.compare(password, admin.password);
+    } else {
+      isMatch = (admin.password === password);
+    }
+
+    if (!isMatch) {
+      console.log(`LOGIN FAILED: Password mismatch for "${normalizedUsername}"`);
+      return res.status(401).json({ message: "Invalid credentials" });
+    }
+
+    console.log(`LOGIN SUCCESS: "${normalizedUsername}"`);
 
     // Dynamic role from database (officer or superadmin)
     const role = admin.role || "officer";
