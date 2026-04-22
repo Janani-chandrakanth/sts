@@ -6,5 +6,9 @@
     "mobile",
     "backend",
     "frontend"
-  ]
+  ],
+  "scripts": {
+    "build": "npm install --workspace=backend",
+    "start": "npm start --workspace=backend"
+  }
 }
