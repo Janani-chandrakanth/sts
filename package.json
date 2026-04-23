@@ -8,7 +8,7 @@
     "frontend"
   ],
   "scripts": {
-    "build": "npm install --workspace=backend",
+    "build": "npm install --workspace=backend --legacy-peer-deps",
     "start": "npm start --workspace=backend"
   }
 }
